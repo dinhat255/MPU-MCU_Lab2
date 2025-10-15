@@ -112,10 +112,10 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim2);
  8000160:	4809      	ldr	r0, [pc, #36]	; (8000188 <main+0x3c>)
  8000162:	f001 f933 	bl	80013cc <HAL_TIM_Base_Start_IT>
-  /* USER CODE END 2 */
   setTimer0(1000);
  8000166:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
  800016a:	f000 f8ff 	bl	800036c <setTimer0>
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
