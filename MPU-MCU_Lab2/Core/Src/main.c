@@ -313,7 +313,7 @@ void updateLEDMatrix(int index){
     }
 }
 
-void shiftleftMatrixBuffer(){
+void shiftMatrixBuffer(){
 	uint8_t  first = matrix_buffer[0];
 	for (int i = 0; i < SIZEOF_MATRIX_BUFFER - 1; ++i){
 		matrix_buffer[i] = matrix_buffer[i+1];
@@ -382,7 +382,7 @@ int main(void)
 	  }
 
 	  if (timer_flag[3] == 1){
-		  shiftleftMatrixBuffer();
+		  shiftMatrixBuffer();
 		  setTimer(3,160);
 	  }
     /* USER CODE END WHILE */
